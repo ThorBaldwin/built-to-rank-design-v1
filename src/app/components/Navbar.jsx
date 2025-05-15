@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <section className="px-10 text-[#002B56] text-[15px] mx-auto py-5 w-full">
+    <section className="px-10 max-w-7xl text-[#002B56] text-[15px] mx-auto py-5 w-full">
       <div className="flex items-center justify-between">
         <div className="flex space-x-7">
           <div>

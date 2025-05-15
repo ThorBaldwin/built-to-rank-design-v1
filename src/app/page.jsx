@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "./components/Marquee";
+import CompanyOverview from "./components/CompanyOverview";
+import ConsultationReminder from "./components/ConsultationReminder";
 
 export default function Home() {
   return (
     <>
-    <section className=" mx-auto pt-20 px-10 grid grid-cols-12 w-full text-[#002B56]">
+    <section className=" mx-auto max-w-7xl pt-20 px-10 grid grid-cols-12 w-full text-[#002B56]">
         <div className="col-span-7 pt-10 flex flex-col">
           <div className="text-sm font-semibold text-[#FFB300]">
             <p>Revamp your online strategy</p>
@@ -41,6 +43,8 @@ export default function Home() {
         </div>
     </section>
     <Marquee />
+    <CompanyOverview />
+    <ConsultationReminder />
     </>
   );
 }
