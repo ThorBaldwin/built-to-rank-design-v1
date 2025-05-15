@@ -8,7 +8,7 @@ function ConsultationReminder() {
         <div className="py-20">
           <div className="flex flex-col justify-center max-w-[620px] mx-auto text-center">
             <div className="font-semibold leading-[150%] text-[#FFB300] text-sm">
-              <p>Services</p>
+              <p>Let's make it happen</p>
             </div>
             <div className="font-bold max-w-[15ch] mx-auto pt-4 text-[#F9FAFB] text-5xl tracking-[-2%]">
               <h2>Refresh. Redesign. Reimagine.</h2>

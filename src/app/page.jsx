@@ -10,7 +10,7 @@ export default function Home() {
     <section className=" mx-auto max-w-7xl pt-20 px-10 grid grid-cols-12 w-full text-[#002B56]">
         <div className="col-span-7 pt-10 flex flex-col">
           <div className="text-sm font-semibold text-[#FFB300]">
-            <p>Revamp your online strategy</p>
+            <p>Upgrade your online impact</p>
           </div>
           <div className="text-7xl pt-4 font-bold leading-[100%] tracking-[-0.02em]">
             <h1>Elevate your <br /> digital presence</h1>
@@ -36,8 +36,8 @@ export default function Home() {
         <div className="col-span-5">
                   <Image
                     src="/"
-                    height={520}
-                    width={520}
+                    height={500}
+                    width={500}
                     alt="Built to rank logo"
                   />
         </div>

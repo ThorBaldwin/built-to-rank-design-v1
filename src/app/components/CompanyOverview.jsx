@@ -10,7 +10,7 @@ function CompanyOverview() {
         <div className="col-span-7 max-w-[615px]">
           <div>
             <div className="font-semibold leading-[150%] text-[#FFB300] text-sm">
-              <p>Services</p>
+              <p>What we bring to the table</p>
             </div>
             <div className="font-bold pt-4 tracking-[-0.02em] text-5xl leading-[100%]">
               <h2>Unlock your brand's potential</h2>
