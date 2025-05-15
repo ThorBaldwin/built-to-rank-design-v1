@@ -75,14 +75,16 @@ export default function Home() {
           </div>
         </motion.div>
 
-        <motion.div variants={itemVariants} className="col-span-5">
-          <Image
-            src="/your-image.png" // <-- replace with actual image path
-            height={500}
-            width={500}
-            alt="Digital presence illustration"
-          />
-        </motion.div>
+        <motion.div variants={itemVariants} className="col-span-5 relative h-[500px]">
+  <Image
+    src="/hero.jpg"
+    alt="Digital presence illustration"
+    layout="fill"
+    objectFit="cover"
+    className="rounded-lg"
+  />
+</motion.div>
+
       </motion.section>
 
       <Marquee />

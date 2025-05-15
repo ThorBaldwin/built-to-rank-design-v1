@@ -107,10 +107,11 @@ function CompanyOverview() {
         {/* Right Image Section */}
         <div className="col-span-5 relative h-full">
           <Image
-            src="/your-image.jpg" // Replace with your actual image path
+            src="/second.jpg" // Replace with your actual image path
             alt="Built to rank logo"
-            fill
-            className="object-cover"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
           />
         </div>
       </div>
