@@ -76,13 +76,15 @@ export default function Home() {
         </motion.div>
 
         <motion.div variants={itemVariants} className="col-span-5 relative h-[500px]">
-  <Image
-    src="/hero.jpg"
-    alt="Digital presence illustration"
-    layout="fill"
-    objectFit="cover"
-    className="rounded-lg"
-  />
+        <Image
+  src="/hero.jpg"
+  alt="Digital presence illustration"
+  layout="fill"
+  objectFit="cover"
+  className="rounded-lg"
+  priority
+/>
+
 </motion.div>
 
       </motion.section>

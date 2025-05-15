@@ -112,6 +112,7 @@ function CompanyOverview() {
             layout="fill"
             objectFit="cover"
             className="rounded-lg"
+            priority
           />
         </div>
       </div>
