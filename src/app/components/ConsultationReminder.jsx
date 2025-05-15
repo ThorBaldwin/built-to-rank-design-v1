@@ -1,9 +1,32 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const easing = [0.25, 1, 0.5, 1];
+
+const containerVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: easing,
+      duration: 0.9,
+    },
+  },
+};
 
 function ConsultationReminder() {
   return (
-    <section className="pt-[100px]">
+    <motion.section
+      className="pt-[100px]"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      variants={containerVariants}
+    >
       <div className="px-10 bg-[#0070E0]">
         <div className="py-20">
           <div className="flex flex-col justify-center max-w-[620px] mx-auto text-center">
@@ -21,7 +44,7 @@ function ConsultationReminder() {
               </p>
             </div>
             <div className="pt-6">
-              <Link href="/">
+              <Link href="/" passHref>
                 <button className="px-5 py-3 font-medium text-[#002B56] bg-[#FFB300] leading-[150%] rounded-full">
                   Book your free consultation
                 </button>
@@ -30,7 +53,7 @@ function ConsultationReminder() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
