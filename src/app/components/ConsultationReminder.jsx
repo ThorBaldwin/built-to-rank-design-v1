@@ -21,7 +21,7 @@ const containerVariants = {
 function ConsultationReminder() {
   return (
     <motion.section
-      className="pt-24"
+      className="pt-28"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
