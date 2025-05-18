@@ -1,2 +1,10 @@
 @import "tailwindcss";
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }

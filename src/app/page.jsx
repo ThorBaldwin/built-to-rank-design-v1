@@ -40,7 +40,7 @@ export default function Home() {
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className="mx-auto max-w-[1440px] pt-56 px-10 grid grid-cols-12 w-full text-[#002B56]"
+        className="mx-auto max-w-[1440px] overflow-hidden pt-56 px-10 grid grid-cols-12 w-full text-[#002B56]"
       >
         <motion.div
           variants={itemVariants}
