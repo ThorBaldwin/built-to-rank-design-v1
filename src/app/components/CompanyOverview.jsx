@@ -20,7 +20,7 @@ const containerVariants = {
 function CompanyOverview() {
   return (
     <motion.section
-      className="mx-auto max-w-7xl pt-[100px] px-10 text-[#002B56]"
+      className="mx-auto max-w-[1440px] pt-24 px-10 text-[#002B56]"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}

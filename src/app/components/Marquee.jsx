@@ -20,7 +20,7 @@ const marqueeVariants = {
 function Marquee() {
   return (
     <motion.section
-      className="pt-20 max-w-7xl mx-auto px-10"
+      className="pt-24 max-w-[1440px] mx-auto px-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.9 }}

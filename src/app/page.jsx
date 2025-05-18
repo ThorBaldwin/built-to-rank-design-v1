@@ -40,11 +40,11 @@ export default function Home() {
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className="mx-auto max-w-7xl pt-20 px-10 grid grid-cols-12 w-full text-[#002B56]"
+        className="mx-auto max-w-[1440px] pt-56 px-10 grid grid-cols-12 w-full text-[#002B56]"
       >
         <motion.div
           variants={itemVariants}
-          className="col-span-7 pt-10 flex flex-col"
+          className="col-span-6 flex flex-col"
         >
           <p className="text-sm font-semibold text-[#FFB300]">
             Upgrade your online impact
@@ -54,39 +54,40 @@ export default function Home() {
             Elevate your <br /> digital presence
           </h1>
 
-          <h3 className="text-xl pt-6 leading-[150%]">
-            We craft lightning-fast, responsive websites tailored to <br />
-            your unique business goals. Enjoy seamless functionality <br />
-            and peak performance as your online presence is elevated.
+          <h3 className="text-xl pt-6 max-w-[50ch] leading-[150%]">
+            We craft lightning-fast, responsive websites tailored to your unique
+            business goals. Enjoy seamless functionality and peak performance as
+            your online presence is elevated.
           </h3>
 
-          <div className="pt-6 space-x-5">
+          <div className="pt-6 space-x-6">
             <Link href="/" passHref>
-              <button className="px-5 py-3 rounded-full bg-[#0070E0] text-white font-medium leading-[150%]">
+              <button className="px-6 py-2.5 rounded-lg bg-[#0070E0] text-white font-medium leading-[150%]">
                 Get started
               </button>
             </Link>
 
             <Link href="/" passHref>
-              <button className="px-5 py-3 rounded-full border border-[#002B56] text-[#002B56] bg-[#F9FAFB] font-medium leading-[150%]">
+              <button className="px-6 py-2.5 rounded-lg border border-[#002B56] text-[#002B56] bg-[#F9FAFB] font-medium leading-[150%]">
                 Book your free consultation
               </button>
             </Link>
           </div>
         </motion.div>
 
-        <motion.div variants={itemVariants} className="col-span-5 relative h-[500px]">
-        <Image
-  src="/hero.jpg"
-  alt="Digital presence illustration"
-  layout="fill"
-  objectFit="cover"
-  className="rounded-lg"
-  priority
-/>
-
-</motion.div>
-
+        <motion.div
+          variants={itemVariants}
+          className="col-span-6 relative bottom-12 left-12 h-[500px]"
+        >
+          <Image
+            src="/hero.jpg"
+            alt="Digital presence illustration"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+            priority
+          />
+        </motion.div>
       </motion.section>
 
       <Marquee />

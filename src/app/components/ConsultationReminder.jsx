@@ -21,14 +21,14 @@ const containerVariants = {
 function ConsultationReminder() {
   return (
     <motion.section
-      className="pt-[100px]"
+      className="pt-24"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
       variants={containerVariants}
     >
       <div className="px-10 bg-[#0070E0]">
-        <div className="py-20">
+        <div className="py-16">
           <div className="flex flex-col justify-center max-w-[620px] mx-auto text-center">
             <div className="font-semibold leading-[150%] text-[#FFB300] text-sm">
               <p>Let's make it happen</p>

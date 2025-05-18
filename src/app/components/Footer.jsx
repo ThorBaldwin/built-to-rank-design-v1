@@ -37,7 +37,7 @@ const footerColumns = [
 function Footer() {
   return (
     <motion.section
-      className="py-[100px] max-w-7xl mx-auto text-sm text-[#002B56] px-10"
+      className="py-24 max-w-[1440px] mx-auto text-sm text-[#002B56] px-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}

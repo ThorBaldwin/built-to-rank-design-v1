@@ -42,49 +42,56 @@ function Navbar() {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="w-full py-5 px-10 max-w-7xl mx-auto text-[#002B56] text-[15px] overflow-hidden"
+      className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm text-[#002B56] text-[15px] overflow-hidden"
     >
-      <div className="flex items-center justify-between">
-        <div className="flex items-center space-x-7">
-          <motion.div variants={itemVariants}>
-            <Image
-              src="/logo.png"
-              height={47}
-              width={130}
-              alt="Built to rank logo"
-            />
-          </motion.div>
+      <div className="max-w-[1440px] mx-auto py-5 px-10">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-10">
+            <motion.div variants={itemVariants}>
+              <Image
+                src="/logo.png"
+                height={47}
+                width={130}
+                alt="Built to rank logo"
+              />
+            </motion.div>
 
-          <div className="flex items-center space-x-6 leading-[150%]">
-            {navItems.map((item) => (
-              <motion.div
-                key={item.label}
-                variants={itemVariants}
-                whileHover={{ y: -2, transition: { ease: easing, duration: 0.3 } }}
-                transition={{ ease: easing, duration: 0.5 }}
-              >
-                {/* Removed underline span */}
-                <Link href={item.href} className="relative">
-                  {item.label}
-                </Link>
-              </motion.div>
-            ))}
+            <div className="flex items-center space-x-8 leading-[150%]">
+              {navItems.map((item) => (
+                <motion.div
+                  key={item.label}
+                  variants={itemVariants}
+                  whileHover={{
+                    y: -2,
+                    transition: { ease: easing, duration: 0.3 },
+                  }}
+                  transition={{ ease: easing, duration: 0.5 }}
+                >
+                  <Link href={item.href} className="relative">
+                    {item.label}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <motion.div
-          variants={itemVariants}
-          whileHover={{ scale: 1.05, transition: { ease: easing, duration: 0.3 } }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ ease: easing, duration: 0.5 }}
-        >
-          <Link
-            href="/"
-            className="px-5 py-2 font-medium leading-[150%] border border-[#002B56] rounded-full"
+          <motion.div
+            variants={itemVariants}
+            whileHover={{
+              scale: 1.05,
+              transition: { ease: easing, duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ ease: easing, duration: 0.5 }}
           >
-            Book a call
-          </Link>
-        </motion.div>
+            <Link
+              href="/"
+              className="px-4 py-2 font-medium leading-[150%] border border-[#002B56] rounded-md"
+            >
+              Get started
+            </Link>
+          </motion.div>
+        </div>
       </div>
     </motion.nav>
   );
