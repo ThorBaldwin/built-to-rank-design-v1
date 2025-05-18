@@ -51,7 +51,7 @@ function Navbar() {
               <Image
                 src="/logo.png"
                 height={47}
-                width={130}
+                width={125}
                 alt="Built to rank logo"
               />
             </motion.div>
