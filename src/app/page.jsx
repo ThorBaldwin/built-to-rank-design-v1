@@ -62,13 +62,13 @@ export default function Home() {
 
           <div className="pt-6 space-x-6">
             <Link href="/" passHref>
-              <button className="px-6 py-2.5 rounded-lg bg-[#0070E0] text-white font-medium leading-[150%]">
+              <button className="px-5.5 py-3 rounded-lg bg-[#0070E0] text-white font-medium leading-[150%]">
                 Get started
               </button>
             </Link>
 
             <Link href="/" passHref>
-              <button className="px-6 py-2.5 rounded-lg border border-[#002B56] text-[#002B56] bg-[#F9FAFB] font-medium leading-[150%]">
+              <button className="px-5.5 py-3 rounded-lg border border-[#002B56] text-[#002B56] bg-[#F9FAFB] font-medium leading-[150%]">
                 Book your free consultation
               </button>
             </Link>

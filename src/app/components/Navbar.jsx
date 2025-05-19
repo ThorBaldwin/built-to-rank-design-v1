@@ -86,7 +86,7 @@ function Navbar() {
           >
             <Link
               href="/"
-              className="px-4 py-2 font-medium leading-[150%] border border-[#002B56] rounded-md"
+              className="px-3.5 py-2 font-medium leading-[150%] border border-[#002B56] rounded-md"
             >
               Get started
             </Link>
