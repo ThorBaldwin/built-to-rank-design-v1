@@ -26,11 +26,11 @@ const footerColumns = [
   },
   {
     title: "Resources",
-    links: ["Blog", "Help Center", "Tutorials"],
+    links: ["Blog", "Help center", "Tutorials"],
   },
   {
     title: "Company",
-    links: ["About Us", "Careers", "Contact"],
+    links: ["About us", "Careers", "Contact"],
   },
 ];
 
