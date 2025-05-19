@@ -74,11 +74,11 @@ function Footer() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-grow rounded-l-lg px-3 py-2.5 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="flex-grow rounded-l-lg px-3.5 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
                 <button
                   type="submit"
-                  className="bg-[#0070E0] hover:bg-[#0070e0b4] text-[#F9FAFB] font-medium px-3 py-2.5 rounded-r-lg"
+                  className="bg-[#0070E0] hover:bg-[#0070e0b4] text-[#F9FAFB] font-medium px-3.5 py-2 rounded-r-lg"
                 >
                   Subscribe
                 </button>
