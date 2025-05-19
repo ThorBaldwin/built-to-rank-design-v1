@@ -45,7 +45,7 @@ function ConsultationReminder() {
             </div>
             <div className="pt-6">
               <Link href="/" passHref>
-                <button className="px-6 py-2.5 font-medium text-[#002B56] bg-[#FFB300] leading-[150%] rounded-lg">
+                <button className="px-5.5 py-3 font-medium text-[#002B56] bg-[#FFB300] leading-[150%] rounded-lg">
                   Book your free consultation
                 </button>
               </Link>
